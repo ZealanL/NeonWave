@@ -82,14 +82,12 @@ public class Render {
 			//Step 1: Get the pixel writer.
 			PixelWriter pw = Main.gc.getPixelWriter();
 			
-			//Step 2: Loop through all of are particles
+			//Step 2: Loop through all of our particles.
 			for (Particle p : Main.particles) {
 				
 				//Step 3: Set the pixel to a color, like... idk... some cool sine equation that produces neon fun.
 				pw.setColor((int)p.x, (int)p.y, new Color((Math.sin(p.x/100) / 2 + 0.5), (Math.sin(p.y/100) / 2 + 0.5), 1, 1));
 			}
-			
-			//Step 4: Profit.
 		}
 	}
 }
